@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="style.css" />
+	<title>Cars</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,100..700,0..1,-50..200" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body id="body" onclick="_overflow">
+	<div class="container">
+		<section class="main-screen-wrapper">
+			<header class="header">
+				<nav id="nav" class="header-nav">
+					<ul class="header-nav__ul">
+						<li class="header-nav__li">
+							<a href="#" class="header-nav__a _active" onclick="navClose()">Главная</a>
+						</li>
+						<li class="header-nav__li">
+							<a href="#" class="header-nav__a _active" onclick="navClose()">Оклейка автомобилей</a>
+						</li>
+						<li class="header-nav__li">
+							<a href="#" class="header-nav__a _active" onclick="navClose()">Детейлинг автомобилей</a>
+						</li>
+						<li class="header-nav__li">
+							<a href="#" class="header-nav__a _active" onclick="navClose()">Галерея работ</a>
+						</li>
+					</ul>
+					<span id="icon-close" onclick="navToggle()" class="material-icons">
+						close
+					</span>
+				</nav>
+				<div class="header__burger">
+					<span id="icon-menu" onclick="navToggle()" class="material-icons _active">
+						menu
+					</span>
+				</div>
+			</header>
+			<div class="main-screen">
+				<h1 class="main-screen__title">CAR MUSIC</h1>
+				<div class="main-screen__rhombus-line">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+				</div>
+				<div class="main-screen__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna
+					amet penatibus.</div>
+				<div class="main-screen__btn btn"><a class="main-screen__a" href="#">Наши услуги</a></div>
+				<div class="main-screen__contacts">
+					<div class="main-screen__adress">
+						<div class="main-screen__subtitle">адрес:</div>
+						<div class="main-screen__subdesc">Lorem ipsum dolor sit amet,</div>
+						<div class="main-screen__subdesc">consectetur adipiscing elit</div>
+					</div>
+					<div class="main-screen__phone">
+						<div class="main-screen__subtitle">телефон:</div>
+						<div class="main-screen__number">8 (812) 123-45-67</div>
+						<div class="main-screen__number">8-911-123-45-67</div>
+					</div>
+					<div class="main-screen__business-hours">
+						<div class="main-screen__subtitle">Режим работы:</div>
+						<div class="main-screen__time">пн-пт : 10:00 - 20:00</div>
+						<div class="main-screen__time">сб-вск : 12:00 - 20:00</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="achievements wrapper">
+			<div class="achievements__info">
+				<h2 class="achievements__title">наши достижения от кубка Украины до чемпионатов мира</h2>
+				<div class="achievements__rhombus-line">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+				</div>
+				<p class="achievements__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant
+					tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu
+					purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus
+					tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis pretium, volutpat.</p>
+			</div>
+			<div class="achievements__progress">
+				<div class="achievements__first-column">
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/icons/1.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/icons/6.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/icons/2.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/icons/1.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+				</div>
+				<div class="achievements__secondary-column">
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/icons/4.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/icons/3.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/icons/1.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+					<div class="achievements__item">
+						<div class="achievements__icon">
+							<img src="./img/cup.png" alt="icon">
+						</div>
+						<p class="achievements__subdesc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slider wrapper">
+			<div class="slider__item">
+				<img src="./img/Rectangle 45.jpg" alt="image">
+				<p class="slider__desc">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+				</p>
+			</div>
+			<div class="slider__item">
+				<img src="./img/Rectangle 47.jpg" alt="image">
+				<p class="slider__desc">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+				</p>
+			</div>
+			<div class="slider__item">
+				<img src="./img/Rectangle 49.jpg" alt="image">
+				<p class="slider__desc">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+				</p>
+			</div>
+		</section>
+
+		<section class="advanages-primary wrapper">
+			<div class="advanages-primary__info">
+				<div class="advanages-primary__item">
+					<div class="advanages-primary__header">
+						<img src="./img/list.png" alt="image">
+						<div class="advanages-primary__title">материалы от лучших компаний</div>
+					</div>
+					<p class="advanages-primary__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium,
+						rutrum
+						est, molestie proin tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis
+						pretium</p>
+				</div>
+				<div class="advanages-primary__rhombus-line">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+				</div>
+				<div class="advanages-primary__item">
+					<div class="advanages-primary__header">
+						<img src="./img/oil.png" alt="image">
+						<div class="advanages-primary__title">Опытные мастера</div>
+					</div>
+					<div class="advanages-primary__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+						donec
+						elementum egestas vitae ullamcorper. Amet volutpat ornare pharetra amet adipiscing orci, lectus
+						aenean ultricies. Erat viverra eget blandit ornare. Molestie ipsum commodo faucibus rhoncus
+					</div>
+				</div>
+				<div class="advanages-primary__rhombus-line">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+				</div>
+				<div class="advanages-primary__item">
+					<div class="advanages-primary__header">
+						<img src="./img/car.png" alt="image">
+						<div class="advanages-primary__title">Гарантия на все виды работы</div>
+					</div>
+					<p class="advanages-primary__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Vestibulum
+						volutpat.</p>
+				</div>
+			</div>
+			<div class="advanages-primary__main">
+				<div class="advanages-primary__img">
+					<img src="./img/Rectangle 52.jpg" alt="car">
+				</div>
+				<div class="advanages-primary__slider">
+					<p class="advanages-primary__subdesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+						auctor nibh feugiat est. Consectetur lectus.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="services wrapper">
+			<h2 class="services__title">Наши услуги</h2>
+			<div class="services__rhombus-line">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+			</div>
+			<div class="services__btns">
+				<div class="services__btn-primary btn">
+					<a class="services__a" href="#">Оклейка</a>
+				</div>
+				<div class="services__btn-primary btn">
+					<a class="services__a" href="#">Детейлинг</a>
+				</div>
+			</div>
+			<div class="services__main">
+				<div class="services__item">
+					<img class="services__img" src="./img/head.png" alt="image">
+					<div class="services__subtitle">
+						Защитные пленки
+					</div>
+					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
+						pellentesque vulputate sit. Ut feugiat.</p>
+					<div class="services__btn-secondary btn">
+						<a class="services__link" href="#">Подробнее</a>
+					</div>
+				</div>
+
+				<div class="services__item">
+					<img class="services__img" src="./img/list.png" alt="image">
+					<div class="services__subtitle">
+						Цветные пленки
+					</div>
+					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
+						pellentesque vulputate sit. Ut feugiat.</p>
+					<div class="services__btn-secondary btn">
+						<a class="services__link" href="#">Подробнее</a>
+					</div>
+				</div>
+
+				<div class="services__item">
+					<img class="services__img" src="./img/oil.png" alt="image">
+					<div class="services__subtitle">
+						Дизайн
+					</div>
+					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
+						pellentesque vulputate sit. Ut feugiat.</p>
+					<div class="services__btn-secondary btn">
+						<a class="services__link" href="#">Подробнее</a>
+					</div>
+				</div>
+
+				<div class="services__item">
+					<img class="services__img" src="./img/car.png" alt="image">
+					<div class="services__subtitle">
+						Оклейка салона
+					</div>
+					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
+						pellentesque vulputate sit. Ut feugiat.</p>
+					<div class="services__btn-secondary btn">
+						<a class="services__link" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advanages-secondary wrapper">
+			<div class="advanages-secondary__main">
+				<div class="advanages-secondary__img">
+					<img src="./img/rectangle 53.jpg" alt="car">
+				</div>
+				<div class="advanages-secondary__slider">
+					<p class="advanages-secondary__subdesc">Neque metus vitae urna purus aliquam. Felis nullam pellentesque ac mi commodo, amet, porta in. Dui.</p> 
+				</div>
+			</div>
+			<div class="advanages-secondary__info">
+				<div class="advanages-secondary__item">
+					<div class="advanages-secondary__header">
+						<img src="./img/head.png" alt="car">
+						<div class="advanages-secondary__title">100% полироль axem</div>
+					</div>
+					<div class="advanages-secondary__desc">Pharetra in bibendum id id. Sit maecenas sollicitudin est,
+						hendrerit in malesuada. Eu, et lacus nisi mus sagittis, rhoncus est dictum. Gravida lectus urna,
+						arcu, sodales. Ac.</div>
+				</div>
+				<div class="advanages-secondary__rhombus-line">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+				</div>
+				<div class="advanages-secondary__item">
+					<div class="advanages-secondary__header">
+						<img src="./img/list.png" alt="car">
+						<div class="advanages-secondary__title">выполняем работу четко по тз</div>
+					</div>
+					<div class="advanages-secondary__desc">Lorem nulla non nibh quis elit odio. Dui et ultricies duis
+						mattis dictum et senectus nunc sodales. Tellus lorem risus etiam quam massa lobortis convallis
+						laoreet. Nec.</div>
+				</div>
+				<div class="advanages-secondary__rhombus-line">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+					<img src="./img/icons/rhombus.png" alt="rhombus">
+				</div>
+				<div class="advanages-secondary__item">
+					<div class="advanages-secondary__header">
+						<img src="./img/oil.png" alt="car">
+						<div class="advanages-secondary__title">у нас лучшие мастера</div>
+					</div>
+					<div class="advanages-secondary__desc">Posuere nam sodales ullamcorper bibendum justo maecenas at.
+						Ultricies bibendum morbi tempor vehicula. Ultrices erat maecenas in id maecenas sed ipsum
+						scelerisque. </div>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-works">
+			<h2 class="our-works__title">
+				Наши работы
+			</h2>
+			<div class="our-works__rhombus-line">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+			</div>
+			<img src="./img/cars.jpg" alt="cars">
+		</section>
+
+		<section class="contacts">
+			<h2 class="contacts__title">
+				ответим на любой вопрос
+			</h2>
+			<div class="contacts__rhombus-line">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+				<img src="./img/icons/rhombus.png" alt="rhombus">
+			</div>
+			<div class="contacts__forms">
+				<form action="#" class="contacts__form">
+					<label class="contacts__name">
+						<input type="text" placeholder="имя">
+					</label>
+					<label class="contacts__phone">
+						<input type="text" placeholder="телефон">
+					</label>
+				</form>
+				<form action="#" class="contacts__form">
+					<label class="contacts__textarea">
+						<textarea placeholder="Вопрос по дизайну, тюнингу и др."></textarea>
+					</label>
+					<div class="contacts__item">
+						<div class="contacts__social">
+							<img src="./img/icons/soc-icons1.png" alt="icon">
+						</div>
+						<div class="contacts__social">
+							<img src="./img/icons/soc-icons2.png" alt="icon">
+						</div>
+						<div class="contacts__social">
+							<img src="./img/icons/soc-icons3.png" alt="icon">
+						</div>
+					</div>
+				</form>
+				<div class="contacts__footer">
+					<div class="btn contacts__btn">
+						<a class="contacts__a" href="#">отправить</a>
+					</div>
+					<div class="contacts__block">
+						<div class="contacts__adress">
+							<span class="material-symbols-outlined">
+								location_on
+							</span> Eu faucibus et rutrum fringilla orci nunc
+						</div>
+						<div class="contacts__wrapper">
+							<div class="contacts__phone-number">
+								<span class="material-symbols-outlined">
+									call
+								</span> 8 (812) 123-45-67
+							</div>
+							<div class="contacts__email"><span class="material-symbols-outlined">
+									drafts
+								</span> test@test.ru
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<footer class="footer wrapper">
+			<p class="footer__title">2022 © Est et viverra pellentesque pharetra lorem proin in. Vitae magna at tempus commodo.</p>
+			<nav class="footer-nav">
+				<ul class="footer-nav__ul">
+					<li class="footer-nav__li">
+						<a href="#home" class="footer-nav__a">Главная</a>
+					</li>
+					<li class="footer-nav__li">
+						<a href="#about me" class="footer-nav__a">Оклейка автомобилей</a>
+					</li>
+					<li class="footer-nav__li">
+						<a href="#projects" class="footer-nav__a">Детейлинг автомобилей</a>
+					</li>
+					<li class="footer-nav__li">
+						<a href="#contact me" class="footer-nav__a">Галерея работ</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+
+		<script src="script.js"></script>
+</body>
+
+</html>

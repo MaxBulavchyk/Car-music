@@ -1,0 +1,41 @@
+.footer {
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include desktop-small {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+    @include mobile {
+        padding: 20px 20px;
+    }
+    &__title {
+        @include text($font, 600, 16px, 140%, $color-white);
+        text-align: center;
+        opacity: 0.5;
+    }
+}
+.footer-nav {
+
+    &__ul {
+        display: flex;
+        padding: 0;
+        gap: 40px;
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: start;
+            gap: 20px 40px;
+        }
+    }
+
+    &__li {
+    }
+
+    &__a {
+        @include text($font, 500, 24px, 120%, $color-white);
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}

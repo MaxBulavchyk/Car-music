@@ -1,0 +1,76 @@
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 180px;
+    @include tablet-small {
+        grid-template-columns: 1fr;
+        margin-bottom: 100px;
+        gap: 40px;
+    }
+
+    &__title {
+        @include text($font, 600, 52px, 140%, $color-white);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        @include desktop-small {
+            font-size: 40px;
+        }
+        @include tablet-small {
+            text-align: center;
+        }
+    }
+
+    &__rhombus-line {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__desc {
+        @include text($font, 500, 24px, 120%, $color-white);
+        letter-spacing: 0.03em;
+        max-width: 526px;
+    }
+
+    &__progress {
+        display: flex;
+    }
+
+    &__first-column {
+        border: 1px solid $color-border;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 20px 35px;
+        gap: 22px;
+        border-bottom: 1px solid $color-border;
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__subdesc {
+        @include text($font, 600, 16px, 140%, $color-white);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 277px;
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__secondary-column {
+        border: 1px solid $color-border;
+        margin-top: 40px;
+    }
+}
+
+

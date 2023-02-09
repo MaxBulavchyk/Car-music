@@ -1,0 +1,17 @@
+.our-works {
+    margin-bottom: 120px;
+    &__title {
+        @include text($font, 600, 52px, 140%, $color-white);
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    &__rhombus-line {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px 0;
+    }
+}
+

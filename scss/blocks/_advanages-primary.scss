@@ -1,0 +1,77 @@
+.advanages-primary {
+    display: flex;
+    gap: 134px;
+    margin-bottom: 180px;
+    @include desktop-small{
+        gap: 40px;
+    }
+    @include tablet{
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+    }
+    &__info {
+        flex: 0 2 526px;
+        @include tablet{
+            flex: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @include tablet{
+            flex: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        @include text($font, 600, 32px, 140%, $color-white);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        @include text($font, 500, 24px, 120%, $color-white);
+        letter-spacing: 0.03em;
+        margin-top: 30px;
+    }
+
+    &__rhombus-line {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    &__main {
+        flex: 0 1 636px;
+        @include tablet{
+            flex: 0;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    &__slider {
+    }
+
+    &__subdesc {
+        @include text($font, 600, 18px, 140%, $color-white);
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+

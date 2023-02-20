@@ -260,11 +260,13 @@
 			</div>
 			<div class="services__main">
 				<div class="services__item">
-					<img class="services__img" src="./img/head.png" alt="image">
+					<div class="services__image">
+						<img src="./img/head.png" alt="image">
+					</div>
 					<div class="services__subtitle">
 						Защитные пленки
 					</div>
-					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
+					<p class="services__desc">Lorem ipsum dolor sit amet.
 						pellentesque vulputate sit. Ut feugiat.</p>
 					<div class="services__btn-secondary btn">
 						<a class="services__link" href="#">Подробнее</a>
@@ -272,23 +274,26 @@
 				</div>
 
 				<div class="services__item">
-					<img class="services__img" src="./img/list.png" alt="image">
+					<div class="services__image">
+						<img src="./img/list.png" alt="image">
+					</div>
 					<div class="services__subtitle">
 						Цветные пленки
 					</div>
-					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
-						pellentesque vulputate sit. Ut feugiat.</p>
+					<p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					<div class="services__btn-secondary btn">
 						<a class="services__link" href="#">Подробнее</a>
 					</div>
 				</div>
 
 				<div class="services__item">
-					<img class="services__img" src="./img/oil.png" alt="image">
+					<div class="services__image">
+						<img src="./img/oil.png" alt="image">
+					</div>
 					<div class="services__subtitle">
 						Дизайн
 					</div>
-					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
+					<p class="services__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 						pellentesque vulputate sit. Ut feugiat.</p>
 					<div class="services__btn-secondary btn">
 						<a class="services__link" href="#">Подробнее</a>
@@ -296,11 +301,13 @@
 				</div>
 
 				<div class="services__item">
-					<img class="services__img" src="./img/car.png" alt="image">
+					<div class="services__image">
+						<img src="./img/car.png" alt="image">
+					</div>
 					<div class="services__subtitle">
 						Оклейка салона
 					</div>
-					<p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices
+					<p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 						pellentesque vulputate sit. Ut feugiat.</p>
 					<div class="services__btn-secondary btn">
 						<a class="services__link" href="#">Подробнее</a>
@@ -384,16 +391,19 @@
 				<img src="./img/icons/rhombus.png" alt="rhombus">
 				<img src="./img/icons/rhombus.png" alt="rhombus">
 			</div>
-			<div class="contacts__forms">
-				<form action="#" class="contacts__form">
+
+			<form action="#" class="contacts__forms" method="get">
+
+				<div class="contacts__form">
 					<label class="contacts__name">
 						<input type="text" placeholder="имя">
 					</label>
 					<label class="contacts__phone">
 						<input type="text" placeholder="телефон">
-					</label>
-				</form>
-				<form action="#" class="contacts__form">
+					</label> 
+				</div>
+
+				<div class="contacts__form">
 					<label class="contacts__textarea">
 						<textarea placeholder="Вопрос по дизайну, тюнингу и др."></textarea>
 					</label>
@@ -408,11 +418,10 @@
 							<img src="./img/icons/soc-icons3.png" alt="icon">
 						</div>
 					</div>
-				</form>
+				</div>
+
 				<div class="contacts__footer">
-					<div class="btn contacts__btn">
-						<a class="contacts__a" href="#">отправить</a>
-					</div>
+					<button class="contacts__btn" type="submit">отправить</button>
 					<div class="contacts__block">
 						<div class="contacts__adress">
 							<span class="material-symbols-outlined">
@@ -432,7 +441,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
+
+			</form>
 		</section>
 
 		<hr>
